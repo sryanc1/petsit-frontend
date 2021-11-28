@@ -32,6 +32,13 @@ class SignUpView{
           <div class="signinup-box">
         <img class="signinup-logo" src="/images/petsit.svg">
           <sl-form class="form-signup" @sl-submit=${this.signUpSubmitHandler}>
+              <sl-input style="display: none;" name="petName" value="Not complete"></sl-input>
+              <sl-input style="display: none;" name="location" value="Not complete"></sl-input>
+              <sl-input style="display: none;" name="petType" value="1"></sl-input>
+              <sl-input style="display: none;" name="breed" value="Not complete"></sl-input>
+              <sl-input style="display: none;" name="specialRequirements" value="None"></sl-input>
+              <sl-input style="display: none;" name="spoilRating" value="1"></sl-input>
+              <sl-input style="display: none;" name="avatar" value="/images/avatar-blank.jpeg"></sl-input>              
             <div class="input-group">
               <sl-input name="firstName" type="text" placeholder="First Name" required></sl-input>
             </div>
