@@ -75,7 +75,7 @@ class ProfileView {
               <br>
           </div>
             <p style="width: 100%; display: inline-block;"><b>Favour Rating: &nbsp</b></p>
-            <img style="width: 80%; left: 8%; display: inline-block;" src="${App.apiBase}/images/${Auth.currentUser.favourRating}">
+            <img style="width: 100%; max-height: 150px; display: inline-block;" src="${App.apiBase}/images/${Auth.currentUser.favourRating}">
             <div class="three" style="background-color: #c8e9f8;"> 
               <h3>Pet Sit Requests for you:</h3>
                   ${this.sitRequests.map(sitRequest => html`
