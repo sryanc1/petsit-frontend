@@ -19,14 +19,16 @@ class SignUpView{
     submitBtn.setAttribute('loading', '')    
     const formData = e.detail.formData
     formData.append('accessLevel', '1')
-    formData.append('petName', 'Not completed')
+    formData.append('petName', 'Your pet name')
     formData.append('location', 'Not completed')
     formData.append('petType', 'Not completed')
     formData.append('breed', 'Not completed')
     formData.append('description', 'Not completed')
     formData.append('specialRequirements', 'Not completed')
     formData.append('spoilRating', 1)
-    formData.append('avatar', '/images/avatar-blank.jpeg')
+    formData.append('avatar', 'avatar-blank.jpeg')
+    formData.append('favourRating', '5.svg')
+
     
     
     // sign up using Auth
