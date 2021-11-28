@@ -59,7 +59,7 @@ class SitterView {
           `:html``}
             <div class="two">
               <h3> ${this.Sitter.firstName} and ${this.Sitter.petName}</h3>
-              <p>${this.Sitter.location}</p>
+              <p><b>Location: &nbsp</b>${this.Sitter.location}</p>
               <p><b>Pet Type: &nbsp</b>${this.Sitter.petType}</p>
               <p><b>Breed: &nbsp</b>${this.Sitter.breed}</p>    
               <p><b>Spoil Rating: &nbsp</b><sl-rating class="rating-hearts" readonly value="${this.Sitter.spoilRating}" style="--symbol-color-active: #ff4136;"></sl-rating></p>
