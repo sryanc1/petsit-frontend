@@ -18,6 +18,16 @@ class SignUpView{
     const submitBtn = document.querySelector('.submit-btn')
     submitBtn.setAttribute('loading', '')    
     const formData = e.detail.formData
+    formData.append('accessLevel', '1')
+    formData.append('petName', 'Not completed')
+    formData.append('location', 'Not completed')
+    formData.append('petType', 'Not completed')
+    formData.append('breed', 'Not completed')
+    formData.append('description', 'Not completed')
+    formData.append('specialRequirements', 'Not completed')
+    formData.append('spoilRating', 1)
+    formData.append('avatar', '/images/avatar-blank.jpeg')
+    
     
     // sign up using Auth
     Auth.signUp(formData, () => {
@@ -44,16 +54,7 @@ class SignUpView{
             <div class="input-group">
               <sl-input name="password" type="password" placeholder="Password" required toggle-password></sl-input>
             </div> 
-            <div class="input-group">
-              <input name="accessLevel" type="hidden" value="1">
-              <sl-input type="hidden" name="petName" value="Not complete"></sl-input>
-              <sl-input type="hidden" name="location" value="Not complete"></sl-input>
-              <sl-input type="hidden" name="petType" value="1"></sl-input>
-              <sl-input type="hidden" name="breed" value="Not complete"></sl-input>
-              <sl-input type="hidden" name="specialRequirements" value="None"></sl-input>
-              <sl-input type="hidden" name="spoilRating" value="1"></sl-input>
-              <sl-input type="hidden" name="avatar" value="/images/avatar-blank.jpeg"></sl-input>              
-            </div>           
+           
             <sl-button type="primary" class="submit-btn" submit style="width: 100%;">Sign Up</sl-button>
           </sl-form>
           <p>Have an account? <a href="/signin" @click=${anchorRoute}>Sign In</a></p>
