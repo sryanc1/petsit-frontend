@@ -29,6 +29,8 @@ class EditProfileView {
   async updateProfileSubmitHandler(e){
     e.preventDefault()
     const formData = e.detail.formData
+    formData.append('favourRating', Auth.currentUser.favourRating)
+
     const submitBtn = document.querySelector('.submit-btn')
     submitBtn.setAttribute('loading', '')
     try {
