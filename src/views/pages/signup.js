@@ -32,13 +32,6 @@ class SignUpView{
           <div class="signinup-box">
         <img class="signinup-logo" src="/images/petsit.svg">
           <sl-form class="form-signup" @sl-submit=${this.signUpSubmitHandler}>
-              <sl-input style="display: none;" name="petName" value="Not complete"></sl-input>
-              <sl-input style="display: none;" name="location" value="Not complete"></sl-input>
-              <sl-input style="display: none;" name="petType" value="1"></sl-input>
-              <sl-input style="display: none;" name="breed" value="Not complete"></sl-input>
-              <sl-input style="display: none;" name="specialRequirements" value="None"></sl-input>
-              <sl-input style="display: none;" name="spoilRating" value="1"></sl-input>
-              <sl-input style="display: none;" name="avatar" value="/images/avatar-blank.jpeg"></sl-input>              
             <div class="input-group">
               <sl-input name="firstName" type="text" placeholder="First Name" required></sl-input>
             </div>
@@ -53,6 +46,13 @@ class SignUpView{
             </div> 
             <div class="input-group">
               <input name="accessLevel" type="hidden" value="1">
+              <sl-input type="hidden" name="petName" value="Not complete"></sl-input>
+              <sl-input type="hidden" name="location" value="Not complete"></sl-input>
+              <sl-input type="hidden" name="petType" value="1"></sl-input>
+              <sl-input type="hidden" name="breed" value="Not complete"></sl-input>
+              <sl-input type="hidden" name="specialRequirements" value="None"></sl-input>
+              <sl-input type="hidden" name="spoilRating" value="1"></sl-input>
+              <sl-input type="hidden" name="avatar" value="/images/avatar-blank.jpeg"></sl-input>              
             </div>           
             <sl-button type="primary" class="submit-btn" submit style="width: 100%;">Sign Up</sl-button>
           </sl-form>
