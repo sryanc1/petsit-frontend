@@ -7,7 +7,7 @@ class App {
   constructor(){
     this.name = "PetSit"
     this.version = "1.0.0"
-    this.apiBase = 'https://cryan-petsit-backend.herokuapp.com/'
+    this.apiBase = 'https://cryan-petsit-backend.herokuapp.com'
     this.rootEl = document.getElementById("root")
     this.version = "1.0.0"
   }
