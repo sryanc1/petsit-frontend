@@ -15,6 +15,7 @@ class SitterView {
     this.Sitter = null
     this.sitRequest = 0
     this.getSitter()
+    this.render()
     Utils.pageIntroAnim()
   }
   
